@@ -9,3 +9,9 @@
 data/*.pt
 model/img/*.pth
 model/particula/*.pth
+
+/.venv/*
+/__pycachee__/*
+/data/*
+/model/*
+/rn-lhc-jet/*

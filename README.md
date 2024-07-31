@@ -25,7 +25,15 @@ Antes de executar os scripts abaixo é preciso ter as mesmas bibliotecas pythons
 - Apos estar dentro do ambiente, basta instalar as bibliotecas (caso tenha duvidas de quais instalar, basta dar o seguinte comando): <br> 
   <code>pip install -r requirements.txt </code>
 ## Tratamento para o Dataset com Imagens 
-Antes de executar o script "tratamento_dados_img.py", é preciso baixar os dados do site, colocar em uma pasta chamada "data", e baixar os arquivos "target_test_raw.csv" e "target_train_raw.csv" do repositório ( disponível na pasta "data"), e o script util.py.  
+Antes de executar o script "tratamento_dados_img.py", é preciso baixar os dados do site.
+Os dados podem ser encontrados aqui: https://zenodo.org/records/3601436 ou serem baixados diretamente com
+
+$wget  https://zenodo.org/records/3601436/files/hls4ml_LHCjet_30p_train.tar.gz
+$wget https://zenodo.org/records/3601436/files/hls4ml_LHCjet_30p_val.tar.gz
+
+Após baixar, descompacte os arquivos para que eles fiquem em subpastas dentro da pasta "data", com o mesmo nome. Ou seja: "data//hls4ml_LHCjet_30p_train" e "data/hls4ml_LHCjet_30p_val"
+
+Depois de descompactados, baixar os arquivos "target_test_raw.csv" e "target_train_raw.csv" do repositório ( disponível na pasta "data"), e o script util.py.  
 Agora basta executar <br>
 <code> python3 tratamento_dados_img.py </code> <br>
 Apos a execução os dados vão ser retornados para a pasta "data".

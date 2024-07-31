@@ -13,6 +13,7 @@ def loadfiles_np(listOfFiles, maxFiles=-1):
         with h5py.File(ifile, "r") as f:
             tmpDf = np.array(f.get("jetImageHCAL"))
             listofDf.append(tmpDf)
+            print("carregado", ifile)
     return np.stack(listofDf)
 
 def salvar_numpy_array(dados, caminho):
